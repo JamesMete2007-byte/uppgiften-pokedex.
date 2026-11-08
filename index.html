@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitt Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mitt Pokédex</h1>
+        <p>Upptäck Pokémon från PokéAPI</p>
+    </header>
+
+    <main>
+        <div class="controls">
+            <button id="show-all-button" class="active">Alla Pokémon</button>
+            <button id="show-favorites-button">Visa favoriter</button>
+        </div>
+
+        <p id="status" aria-live="polite">Hämtar Pokémon...</p>
+
+        <section id="pokemon-list" class="pokemon-grid"></section>
+
+        <section id="pokemon-details" class="details hidden">
+            <button id="back-button" class="back-button">← Tillbaka</button>
+            <div id="details-content"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Information hämtas från PokéAPI</p>
+    </footer>
+</body>
+</html>
